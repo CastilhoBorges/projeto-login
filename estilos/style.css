@@ -65,12 +65,19 @@ main{
 .campo{
     background-color: var(--cor-1);
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 .campo > label{
     display: none;
+}
+
+.campo > i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
 }
 
 form > input[type=submit]{
@@ -82,6 +89,21 @@ form > input[type=submit]{
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+.campo input{
+    background-color: var(--cor-2);
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translateY(-8px);
+    border: 0;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit]:hover{
